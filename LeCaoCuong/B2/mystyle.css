@@ -1,0 +1,199 @@
+
+*{
+	margin:0px;
+}
+
+a{
+	color:white;
+	
+}
+
+body{
+	overflow-x: hidden;
+}
+
+.main-class{
+	margin-left:0px;
+	width:100%;
+	padding-left:0px;
+	background-color:black;
+}
+
+.header-container{
+	height:80px;
+	background-color:black;
+	padding:10px;
+}
+
+.header-container #left-header{
+	float:left;
+	width:50%;
+	text-align: left;
+	
+}
+.header-container #right-header{
+	float:right;
+	width:50%;
+	text-align: right;
+	
+}
+
+.news-container a{
+	text-decoration:none;
+	
+}
+.button-head{
+	background-color:yellow;
+	border:none;
+	border-radius:10px;
+	padding: 12px 28px;
+	
+}
+
+.link-header {
+	color:orange;
+	margin-top:20px;
+	font-size:20px;
+}
+
+.link-header a{
+	color:orange;
+	margin-top:35px;
+	font-size:20px;
+}
+
+.nav-bar{
+	float:auto;
+	background-color:yellow;
+	
+}
+
+nav ul{
+	margin:0px;
+	padding:0;
+	list-style:none;
+	
+	
+}
+
+nav li{
+	display: inline-block;
+	margin-left:35px;
+	padding-bottom:10px;
+	
+}
+
+.nav-bar:not(:last-child) {
+    -webkit-box-shadow: 10px 0px 0px -9px red;
+       -moz-box-shadow: 10px 0px 0px -9px red;
+            box-shadow: 10px 0px 0px -9px red;
+}
+
+nav a{
+	color:#333;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-size:20px;
+}
+
+nav a:hover{
+	color:black;
+	
+}
+
+main{
+
+	width:90vh;
+	width:80%;
+	margin:0 auto;
+	min-height:100vh;
+	max-height:auto;
+	background-color:lightslategray;
+}
+.main-container{
+	padding-top:10px;
+}
+
+.main-container ul{
+	list-style:none;
+	margin:0px;
+	padding:0;
+}
+
+
+
+.main-container #left-main{
+	float:left;
+	width:67%;
+	height:100px;
+	margin:5px;
+	padding:10px;
+}
+
+.main-container #right-main{
+	float:right;
+	width:29%;
+	margin:5px;
+	
+}
+
+.main-container label{
+	color:silver;
+	margin-left:10px;
+	display: inline-block;
+	width:90%;
+	border-bottom: 2px solid darkgray;
+	
+}
+.new-products-container{
+	height:100px;
+	display:block;
+}
+.left-main-img{
+	float:left;
+	width:30%;
+	
+}
+
+.right-text-contain{
+	float:right;
+	width:65%;
+	
+}
+
+.small-img-container{
+	display:inline-block;
+}
+
+footer{
+	background-color:#333;
+	color:gainsboro;
+	padding-left: 10px;
+	padding-top:5px;
+	padding-right:10px;
+	font-family:Trebuchet MS;
+	font-size:15px;
+}
+
+.foot{
+	border-top:
+	margin-top:5px;
+}
+
+.footer-container #left-footer{
+	float:left;
+	width:75%;
+	text-align:left;
+	
+}
+
+.footer-container #right-footer{
+	float:right;
+	width:25%;
+	text-align:right;
+}
+
+.clear{
+	clear:both;
+	
+}
