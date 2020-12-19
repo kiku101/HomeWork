@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('layouts/header'); -%>
+<body>
+  <%- include('layouts/navbar'); -%>
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/post-bg.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <form action="./delete/<%= detailPost.id %>" method="POST">
+          <div class="post-heading">
+            <h1><%= detailPost.title %></h1>
+            <h2 class="subheading"><%= detailPost.body %></h2>
+            <br>
+            <img src=<%= detailPost.urlimage %>>
+            <br><br>
+            <span class="meta">Posted by
+              <a href="#"><%= detailPost.username %></a>
+              on <%= detailPost.datePosted.toDateString() %></span>
+              <br><br>
+
+              <!-- <a href="./delete/<%= detailPost.id %>">Delete</a> -->
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary" id="sendMessageButton">Delete</button>
+              </div>
+              <!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Launch demo modal
+              </button> -->
+          </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <%= detailPost.body %>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <hr>
+  <%- include('layouts/footer'); -%>
+  <%- include('layouts/scripts'); -%>
+
+  <!--Delete confirm-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+<!-- Modal -->

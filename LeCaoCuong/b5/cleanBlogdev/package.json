@@ -1,0 +1,23 @@
+{
+  "name": "cleanblogdev",
+  "version": "1.0.0",
+  "description": "This is demo blog",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "nodemon --inspect src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "5.10.2",
+    "body-parser": "^1.19.0",
+    "bootstrap": "4.3.1",
+    "ejs": "^3.0.1",
+    "jquery": "3.4.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

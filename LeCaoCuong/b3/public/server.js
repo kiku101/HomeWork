@@ -30,7 +30,7 @@ function onRequest(request,response){
         }
         response.end();
     })
-    // var myReadStream = fs.createReadStream(__dirname + fileName,'utf8');
+    // var myReadStream = fs.createReadStream(__dirname + fileName);
     // myReadStream.pipe(response);
 }
 
